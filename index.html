@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<head>
+    <title>Data Diri Fathon Skibidi</title>
+    ,<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <img src="LOGO Kementerian Agama.png" alt="Kemenag" class="header-logo">
+    Biodata Dan Hobi People" di kel 2 Ninediz Skbidi
+    <img src="Blue Night Sky Cute Whale Desktop Wallpaper.png" alt="Mts" class="header-logo">
+  </header>
+  <div class="container">
+    <div class="carousel">
+        <div class="slide red active"><img src="kelompok fathon 1.jpg" alt="Starboy"><h2>M. Fathon Yufiandri 24 Juni 2010</h2> 
+    <p>Hobi:Baca Alquran</p></div>
+        <div class="Slide Blue"><img src="kelompok fathon m.jpg" alt="Ror"><h2>Minerva Rifda Izumi 8 April 2010</h2>
+    <p>Hobi:Berenang</p></div>
+        <div class="slide green"><img src="kelompok fathon 3.jpg" alt="EREF"><h2>Fikri Akbar Sujana 10 Oktober 2009</h2>
+    <p>Hobi:Foto Kereta</p></div>
+        <div class="slide yellow"><img src="kelompok fathon 2.jpg" alt="duar"><h2>Azka Marifatul Wafa 9 Februari 2010</h2>
+    <p>Hobi:Membaca Novel</p></div>
+        <div class="slide purple"><img src="kelompok fathon 5.jpg" alt="Singin"><h2>Trisa Dzafirah Azka</h2> 
+    <p>Hobi:Bernyayi dan melukis</p></div>
+        <div class="slide pink"><img src="kelompok fathon 4e.jpg" alt="Paja"><h2>fhaza kamilatunnisa 3 oktober 2009</h2>
+    <p>Hobi:Menonton Film</p></div>
+        <button onclick="nextSlide()">Next</button>
+    </div>
+</div>
+  <footer>
+    <div class="stars"></div>
+    @NinedizSikma
+  </footer>
+  <script>
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.slide');
+  
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        slide.classList.toggle('active', i === index);
+      });
+    }
+  
+    function nextSlide() {
+      currentSlide = (currentSlide + 1) % slides.length;
+      showSlide(currentSlide);
+    }
+  </script>
+</body>
